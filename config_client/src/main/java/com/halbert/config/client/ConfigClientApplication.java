@@ -19,10 +19,10 @@ public class ConfigClientApplication {
         SpringApplication.run(ConfigClientApplication.class, args);
     }
 
-    @Value("${hints}")
-    String hints;
-    @RequestMapping(value = "/hints")
-    public String hints(){
-        return hints;
+    @Value("${hello}")
+    String hello;
+    @RequestMapping(value = "/hello")
+    public String hello(){
+        return hello;
     }
 }
