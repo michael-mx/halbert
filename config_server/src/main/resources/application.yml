@@ -13,6 +13,6 @@ spring:
           #uri: https://git.oschina.net/chrywhy/test
           #searchPaths: spring-cloud/helloworldConfig
           uri: https://github.com/michael-mx/halbet
-          searchPaths: config_client/spring_cloud_test
+          searchPaths: config_client/src/main/resources
   application:
     name: config-server
