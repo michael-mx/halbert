@@ -1,4 +1,4 @@
-package com.halbert.robbin.client;
+package com.halbert.robbin.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

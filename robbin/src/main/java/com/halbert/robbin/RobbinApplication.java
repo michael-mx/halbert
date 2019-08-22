@@ -1,6 +1,6 @@
 package com.halbert.robbin;
 
-import com.halbert.robbin.client.HelloService;
+import com.halbert.robbin.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
