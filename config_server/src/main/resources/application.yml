@@ -12,6 +12,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/michael-mx/halbet
+          uri: https://github.com/michael-mx/halbert
           searchPaths: config_client/TestConfig
 
