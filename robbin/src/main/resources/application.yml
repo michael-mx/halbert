@@ -6,4 +6,4 @@ server:
   port: 8080
 spring:
   application:
-    name: ribbon
+    name: robbin
