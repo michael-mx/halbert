@@ -1,4 +1,4 @@
-package com.halbert.eureka.server;
+package com.halbert;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
