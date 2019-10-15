@@ -47,6 +47,7 @@ public class RibbonApplication {
 
     @Autowired
     private HelloService helloService;
+
     @RequestMapping("/")
     public String Hello() {
         return helloService.getHelloContent();

@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 //@FeignClient(value = "SERVICE-HELLOWORLD")
 @FeignClient(name = "SERVICE-HELLOWORLD", fallback = HelloServiceFailure.class)
 public interface HelloService {
-    @RequestMapping(value = "/",method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     String sayHello();
 }

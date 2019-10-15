@@ -7,14 +7,17 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 public class HelloService {
-    @Autowired RestTemplate restTemplate;
+    @Autowired
+    RestTemplate restTemplate;
 
-    /**public String getHelloContent() {
-     return restTemplate.getForObject("http://SERVICE-HELLOWORLD/",String.class);
-     }**/
+    /**
+     * public String getHelloContent() {
+     * return restTemplate.getForObject("http://SERVICE-HELLOWORLD/",String.class);
+     * }
+     **/
     @HystrixCommand(fallbackMethod = "serviceFailure")
     public String getHelloContent() {
-        return restTemplate.getForObject("http://SERVICE-HELLOWORLD/",String.class);
+        return restTemplate.getForObject("http://SERVICE-HELLOWORLD/", String.class);
     }
 
     public String serviceFailure() {

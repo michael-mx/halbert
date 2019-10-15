@@ -41,8 +41,9 @@ public class FeignApplication {
 
     @Autowired
     HelloService feignService;
-    @RequestMapping(value = "/",method = RequestMethod.GET)
-    public String sayHello(){
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String sayHello() {
         return feignService.sayHello();
     }
 }
